@@ -1,0 +1,25 @@
+{
+  "name": "m1-mac-chrome-verification",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "http-server -p 1111",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/muyuu/m1-mac-chrome-verification.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muyuu/m1-mac-chrome-verification/issues"
+  },
+  "homepage": "https://github.com/muyuu/m1-mac-chrome-verification#readme"
+}
