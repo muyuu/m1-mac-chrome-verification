@@ -1,0 +1,21 @@
+<script>
+    const keySystems = [
+    ];
+
+    Promise.all(
+        keySystems.map((keySystem) => {
+            navigator.requestMediaKeySystemAccess(
+                keySystem,
+                [
+                    {
+                        initDataTypes: ['cenc'],
+                        videoCapabilities: [{ contentType: 'video/mp4; codecs="avc1.4D401F"' }],
+                        audioCapabilities: [{ contentType: 'audio/mp4; codecs="mp4a.40.2"' }],
+                    },
+                ]
+            )
+            .then(() => console.log( `support    : ${keySystem}.`))
+            .catch(() => console.log(`not support: ${keySystem}.`));
+        })
+    );
+</script>
